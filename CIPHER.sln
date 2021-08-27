@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CiphAesCryptDecrypt", "CiphAesCryptDecrypt\CiphAesCryptDecrypt.vcxproj", "{BFBDEC88-70D2-4C84-BB4B-9299B8EB4886}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ciph3DesCryptDecrypt", "Ciph3DesCryptDecrypt\Ciph3DesCryptDecrypt.vcxproj", "{EC8915DB-3495-40FA-848D-1B146C8E405F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,16 @@ Global
 		{BFBDEC88-70D2-4C84-BB4B-9299B8EB4886}.Release|x64.Build.0 = Release|x64
 		{BFBDEC88-70D2-4C84-BB4B-9299B8EB4886}.Release|x86.ActiveCfg = Release|Win32
 		{BFBDEC88-70D2-4C84-BB4B-9299B8EB4886}.Release|x86.Build.0 = Release|Win32
+		{EC8915DB-3495-40FA-848D-1B146C8E405F}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{EC8915DB-3495-40FA-848D-1B146C8E405F}.Debug|x64.ActiveCfg = Debug|x64
+		{EC8915DB-3495-40FA-848D-1B146C8E405F}.Debug|x64.Build.0 = Debug|x64
+		{EC8915DB-3495-40FA-848D-1B146C8E405F}.Debug|x86.ActiveCfg = Debug|Win32
+		{EC8915DB-3495-40FA-848D-1B146C8E405F}.Debug|x86.Build.0 = Debug|Win32
+		{EC8915DB-3495-40FA-848D-1B146C8E405F}.Release|Any CPU.ActiveCfg = Release|Win32
+		{EC8915DB-3495-40FA-848D-1B146C8E405F}.Release|x64.ActiveCfg = Release|x64
+		{EC8915DB-3495-40FA-848D-1B146C8E405F}.Release|x64.Build.0 = Release|x64
+		{EC8915DB-3495-40FA-848D-1B146C8E405F}.Release|x86.ActiveCfg = Release|Win32
+		{EC8915DB-3495-40FA-848D-1B146C8E405F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
