@@ -50,7 +50,7 @@ BYTE IP[64] =
 };
 
 // IP^-1 : inverse initial permutation
-BYTE InvIP[64]
+BYTE InvIP[64] =
 {
 	40, 8, 48, 16, 56, 24, 64, 32,
 	39, 7, 47, 15, 55, 23, 63, 31,
@@ -321,7 +321,7 @@ VOID WINAPI DesEncrypt(BYTE* in, BYTE* OriginalKey, BYTE* out)
 		Permutation(KTemp, PC2, 48, K[i]);
 		K[i][6] = 0;
 	}
-	
+
 	// Initial Permutation
 	Permutation(in, IP, 64, inIP);
 
@@ -564,7 +564,7 @@ VOID WINAPI DesCbcDecrypt(BYTE* in, DWORD cbIn, BYTE* OriginalKey, BYTE* IV, BYT
 	for (cbCurrent = 8; cbCurrent < cbIn; cbCurrent += 8)
 	{
 		DesDecrypt(&in[cbCurrent], OriginalKey, outTemp);
-		Xor(outTemp, &in[cbCurrent-8], 8, &out[cbCurrent]);
+		Xor(outTemp, &in[cbCurrent - 8], 8, &out[cbCurrent]);
 	}
 
 	return;
@@ -644,7 +644,7 @@ VOID WINAPI TdeaEcbEncrypt(BYTE* in, DWORD cbIn, BYTE* Key1, BYTE* Key2, BYTE* K
 {
 	BYTE Temp1[8], Temp2[8];
 	DWORD cbCurrent;
-	
+
 	DesEncrypt(in, Key1, Temp2);
 	DesDecrypt(Temp2, Key2, Temp1);
 	DesEncrypt(Temp1, Key3, out);
@@ -1164,7 +1164,7 @@ VOID WINAPI TdeaEncryptDecrypt(BYTE* in, DWORD cbIn, BYTE* Key1, BYTE* Key2, BYT
 INT __cdecl main(INT argc, CHAR* argv[])
 {
 	// DES による暗号化テスト
-	
+
 	// Example 1
 	// DES (CBC)
 	// Input = "Now is the time for all " (4e6f772069732074 68652074696d6520 666f7220616c6c20)
@@ -1187,9 +1187,9 @@ INT __cdecl main(INT argc, CHAR* argv[])
 	printf("\r\n");
 	DesEncryptDecrypt((BYTE*)DesExample1_Input, DesExample1_CbInput, DesExample1_Key, DesExample1_IV, DesExample1_Output, DES_MODE_OFB);
 	printf("\r\n");
-	
+
 	// TDEA による暗号化テスト
-	
+
 	// Example 1
 	// Input = "The qufc" = 5468652071756663
 	// Key1 = 0123456789ABCDEF

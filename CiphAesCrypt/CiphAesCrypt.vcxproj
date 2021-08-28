@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{bfbdec88-70d2-4c84-bb4b-9299b8eb4886}</ProjectGuid>
-    <RootNamespace>CiphAesCryptDecrypt</RootNamespace>
+    <ProjectGuid>{1e46b7a7-3959-4b1f-b8a0-c9090309960a}</ProjectGuid>
+    <RootNamespace>CiphAesCrypt</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -142,7 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CiphAesCryptDecrypt.cpp" />
+    <ClCompile Include="CiphAesCrypt.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
